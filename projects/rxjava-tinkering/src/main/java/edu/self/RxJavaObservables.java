@@ -180,7 +180,8 @@ public class RxJavaObservables {
                     public void run() {
                         try {
                             for (String articleName : wikipediaArticles) {
-                                observer.onNext(IOUtils.toString((InputStream) new URL("http://en.wikipedia.org/wiki/" + articleName).getContent()));
+                                observer.onNext(IOUtils.toString((InputStream) new URL(
+                                		"http://en.wikipedia.org/wiki/" + articleName).getContent()));
                             }
                             observer.onCompleted();
                         } catch (Exception e) {
