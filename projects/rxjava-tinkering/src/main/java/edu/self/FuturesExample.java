@@ -39,7 +39,7 @@ public class FuturesExample {
         
         /*System.out.println(downloadContents(new URL("http://www.google.com")));*/
         
-        // Shutting down the pool will ensure the termination of the program.
+        // Shutting down the pool will ensure the termination of the program..
         pool.shutdown();
     }
     
