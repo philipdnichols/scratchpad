@@ -89,7 +89,7 @@ public class RxJavaObservables {
             }
         });*/
         
-        fetchWikipediaArticleAsynchronously(new String[] {"Tiger", "NonExistantTitle", "Elephant"}).subscribe(
+        fetchWikipediaArticleAsynchronously(new String[] {"Tiger", /*"NonExistantTitle"*/ "Elephant"}).subscribe(
             new Action1<String>() {
                 @Override
                 public void call(String t1) {
