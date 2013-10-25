@@ -64,30 +64,31 @@ public class RxJavaObservables {
         });
         System.out.println("Done!");*/
         
-        /*Observable<String> obs = customObservableNonBlockingFuture().skip(10).take(5).map(new Func1<String, String>() {
-            @Override
-            public String call(String string) {
-               return string + "_transformed";
-            }
-        });
-        Subscription sub = obs.subscribe(new Observer<String>() {
-            @Override
-            public void onCompleted() {
-                // TODO Auto-generated method stub
-                
-            }
-
-            @Override
-            public void onError(Throwable e) {
-                // TODO Auto-generated method stub
-                
-            }
-
-            @Override
-            public void onNext(String args) {
-                System.out.println("onNext => " + args);
-            }
-        });*/
+//        Observable<String> obs = customObservableNonBlockingFuture().skip(10).take(5)
+//        	.map(new Func1<String, String>() {
+//        		@Override
+//	            public String call(String string) {
+//	               return string + "_transformed";
+//	            }
+//        	});
+//        Subscription sub = obs.subscribe(new Observer<String>() {
+//            @Override
+//            public void onCompleted() {
+//                // TODO Auto-generated method stub
+//                
+//            }
+//
+//            @Override
+//            public void onError(Throwable e) {
+//                // TODO Auto-generated method stub
+//                
+//            }
+//
+//            @Override
+//            public void onNext(String args) {
+//                System.out.println("onNext => " + args);
+//            }
+//        });
         
         fetchWikipediaArticleAsynchronously(new String[] {"Tiger", /*"NonExistantTitle"*/ "Elephant"}).subscribe(
             new Action1<String>() {
