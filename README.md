@@ -8,6 +8,10 @@ A repository for my various Java tinkerings.
 
 Tinkering with the Netflix Reactive Java library - https://github.com/netflix/RxJava
 
+### spring-tinkering
+
+Tinkering with Spring - http://spring.io
+
 
 ## Build
 
